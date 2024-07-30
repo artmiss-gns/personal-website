@@ -1,17 +1,17 @@
 import streamlit as st
 from streamlit import session_state as ss
+from io import BytesIO
+import base64
 
 if 'sidebar_state' not in ss:
     ss.sidebar_state = 'collapsed'
 
-st.set_page_config(initial_sidebar_state=ss.sidebar_state)
+st.set_page_config(initial_sidebar_state=ss.sidebar_state, page_title="Hossein Golmohammadi - CS Student", page_icon="🖥️", layout="wide")
 
 def change():
     ss.sidebar_state = (
         "collapsed" if ss.sidebar_state == "expanded" else "expanded"
     )
-
-
 
 # Page setup 
 main_page = st.Page(
@@ -67,6 +67,20 @@ pg = st.navigation(
         "Other": [extracurricular],
     }
 )
+
+# download CV from sidebar
+cv_buffer = BytesIO() # Create a buffer to hold the CV file
+with open('src/static/cv.pdf', 'rb') as cv_file:
+    cv_buffer.write(cv_file.read())
+
+cv_button = st.sidebar.download_button(
+    label="Download CV",
+    data=cv_buffer.getvalue(),
+    file_name="Hossein-Golmohammadi_cv.pdf",
+    mime="application/pdf",
+    key="download_cv",
+)
+
 # selected = option_menu(
 #     menu_title=None,
 #     options=["Info", "Projects", "Extracurricular"],
