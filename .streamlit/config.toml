@@ -1,102 +1,10 @@
 [theme]
-# Primary color
-primaryColor = "#82d3ca"
-# Background color for the main content area (cool dark shade)
-backgroundColor = "#2b3e42"
-# Background color for the sidebar (darker cool shade)
-secondaryBackgroundColor = "#243236"
-# Font color for text
-textColor = "#ffffff"
-# Font used for text
-font = "sans serif"
-
-[theme.light]
-# Primary color
-primaryColor = "#82d3ca"
-# Background color for the main content area (clean light shade)
-backgroundColor = "#f7f7f7"
-# Background color for the sidebar (light grey)
-secondaryBackgroundColor = "#e1e1e1"
-# Font color for text
+primaryColor = "#279095"
+backgroundColor = "#eff3f9"
+secondaryBackgroundColor = "#D1D6DC"
 textColor = "#333333"
-# Font used for text
-font = "sans serif"
-
-[theme.dark]
-# Primary color
-primaryColor = "#82d3ca"
-# Background color for the main content area (elegant dark shade)
-backgroundColor = "#1c1f24"
-# Background color for the sidebar (slightly darker)
-secondaryBackgroundColor = "#14171c"
-# Font color for text
-textColor = "#e0e0e0"
-# Font used for text
 font = "sans serif"
 
 [server]
 enableCORS = false
-
-[global]
-# Adjust the width of the main content area
-contentWidth = 1200
-
-[ui]
-# Hide Streamlit's default menu
-hideTopBar = true
-
-
-# Custom CSS to further style your app
-customCSS = """
-    /* Main header styling */
-    h1 {
-        color: #2E7D32;
-        font-size: 42px;
-        font-weight: bold;
-        margin-bottom: 30px;
-    }
-    
-    /* Subheader styling */
-    h2 {
-        color: #1565C0;
-        font-size: 28px;
-        margin-top: 40px;
-        margin-bottom: 20px;
-    }
-    
-    /* Button styling */
-    .stButton>button {
-        color: white;
-        background-color: #4CAF50;
-        border-radius: 5px;
-        border: none;
-        padding: 10px 24px;
-        transition: all 0.3s ease;
-    }
-    
-    .stButton>button:hover {
-        background-color: #45a049;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    
-    /* Sidebar styling */
-    .sidebar .sidebar-content {
-        background-color: #E8F5E9;
-    }
-    
-    /* Data frame styling */
-    .dataframe {
-        font-size: 12px;
-    }
-    
-    /* Chart background */
-    .stPlot {
-        background-color: #F9FBE7;
-        border-radius: 5px;
-        padding: 10px;
-    }
-"""
-
-[browser]
-# Set the favicon for your app
-favicon = "🚀"
+enableXsrfProtection = false

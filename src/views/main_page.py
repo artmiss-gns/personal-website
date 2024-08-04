@@ -3,6 +3,22 @@ from io import BytesIO
 import base64
 from PIL import Image
 from streamlit_carousel import carousel
+from streamlit import session_state as ss
+
+if 'sidebar_state' not in ss:
+    ss.sidebar_state = 'collapsed'
+else :
+    if 'sidebar_runs' in ss :
+        pass
+    else :
+        ss.sidebar_state = 'expanded'
+        ss.sidebar_runs = True
+
+def open_close_sidebar():
+    ss.sidebar_state = (
+        "collapsed" if ss.sidebar_state == "expanded" else "expanded"
+    )
+
 
 def image_to_base64(image):
     buffered = BytesIO()
@@ -51,10 +67,30 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
+st.markdown("""
+<style>
+h3, h4, h5, h6 {
+    color: #1F7A7A;
+    margin-bottom: 0.5rem;
+    sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+h1, h2 {
+    color: #165555;
+    font-weight: bold;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
+
 # Hero Section
 col1, col2 = st.columns([3, 7], gap="large")
 
 with col1:
+
     show_image('src/static/images/profile_picture.webp')
 
     st.markdown("### Connect with me:")
@@ -74,32 +110,42 @@ with col1:
         use_container_width=True
     )
 
+    if st.button(":material/menu: Menu", use_container_width=True, type="primary"):
+        open_close_sidebar()
+
+
 with col2:
     st.title("Hossein Golmohammadi")
     st.subheader("Computer Science Student | Machine Learning Enthusiast")
     
-    st.markdown("""
-    <div class="highlight">
-    Hello! I'm Hossein, a fourth-year Computer Science student specializing in Machine Learning. 
-    Ranked in the top 10% of my class, I'm passionate about advancing AI and data science through research and practical applications.
-    </div>
-    """, unsafe_allow_html=True)
+    # st.markdown("""
+    # I'm a fourth-year Computer Science student at the University of Isfahan, specializing in Machine Learning and ranked in the<br>
+    # **top 10%** of my class.<br>
+    # My research interests include **Natural Language Processing**, **Information Retrieval**, and **Adversarial Machine Learning**.<br>
+    # I'm also passionate about **DevOps** and **MLOps**, focusing on streamlining the deployment and management of ML models in production environments.<br>
+    # I'm passionate about advancing AI and data science through innovative research and practical applications.
+    # """, unsafe_allow_html=True)
 
     st.markdown("""
-    ### Highlights:
-    - 🖥️ 4+ years of Python expertise
-    - 🧠 Strong foundation in ML theory with hands-on experience in predictive modeling
-    - ☁️ Proficient in cloud deployment and ML frameworks
-    - 🔬 Aspiring AI researcher with a focus on NLP and Information Retrieval
-    
-    ### Key Skills:
-    - **Programming:** Python, C++
-    - **Machine Learning:** Scikit-learn, TensorFlow, PyTorch, NumPy, Pandas
-    - **Web Development:** FastAPI, Django, Streamlit
-    - **Cloud & Deployment:** AWS, Docker
-    - **NLP:** NLTK
-    - **Databases:** MySQL, PostgreSQL, SQL Server
+    I'm a fourth-year Computer Science student at the University of Isfahan, specializing in Machine Learning and ranked in the top 10% of my class. My research interests include:
+    - **Natural Language Processing**  
+    - **Information Retrieval**  
+    - **Adversarial Machine Learning**  
+    - **Machine Learning Operations (MLOps)**  
+
+    I'm passionate about advancing AI and data science through innovative research and practical applications. My focus extends to DevOps and MLOps practices, aiming to streamline the deployment and management of ML models in production environments.
     """)
+    st.markdown("""
+        ### Highlights
+        - 🏆 Ranked in top 10% of Computer Science class
+        - 🐍 4+ years of Python expertise with focus on ML frameworks
+        - 🧠 Strong foundation in ML theory and hands-on experience in predictive modeling
+        - 👨‍🏫 Teaching Assistant for Algorithms and Data Structures course
+        - 🚀 Developed multiple ML projects including RAG systems and predictive models
+        - 🔧 Experienced in DevOps practices and cloud deployment (AWS, Docker)
+        - 🔍 Aspiring AI researcher with a focus on NLP and Information Retrieval
+    """, unsafe_allow_html=True)
+
 
 st.markdown("---")
 
