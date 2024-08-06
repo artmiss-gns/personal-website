@@ -131,6 +131,7 @@ with col2:
     - **Natural Language Processing**  
     - **Information Retrieval**  
     - **Adversarial Machine Learning**  
+    - **Computer Vision**  
     - **Machine Learning Operations (MLOps)**  
 
     I'm passionate about advancing AI and data science through innovative research and practical applications. My focus extends to DevOps and MLOps practices, aiming to streamline the deployment and management of ML models in production environments.
