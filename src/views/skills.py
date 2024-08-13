@@ -81,10 +81,20 @@ skills = {
         "Frameworks": ["Scikit-learn", "TensorFlow", "PyTorch"],
         "Data Processing": ["NumPy", "Pandas"],
         "Data Visualization": ["Matplotlib", "Seaborn"],
-        "Natural Language Processing": ["NLTK"],
+        "Natural Language Processing": ["NLTK", "spaCy"],
         "Web Scraping": ["Selenium", "BeautifulSoup", "Scrapy"]
+    },
+    "Web Development & DevOps": {
+        "Web Frameworks": ["Django", "FastAPI"],
+        "Containerization": ["Docker"],
+        "Version Control": ["Git"],
+        "Operating Systems": ["Linux"]
+    },
+    "Cloud & DevOps": {
+        "Cloud Platforms": ["AWS"]
     }
 }
+
 
 st.markdown("<h1>My Technical Skills</h1>", unsafe_allow_html=True)
 
