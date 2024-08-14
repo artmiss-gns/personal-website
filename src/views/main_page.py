@@ -148,37 +148,35 @@ with col2:
     """, unsafe_allow_html=True)
 
 
-st.markdown("---")
+# st.markdown("---")
 
 # Featured Projects Gallery
-st.header("Featured Projects")
+# st.header("Featured Projects")
 
-# Define your project cards
-project_cards = [
-    {
-        "title": "RAG System with Embedded Knowledge Base",
-        "text": "Developed a Retrieval-Augmented Generation system using PDF-based knowledge base with heavy preprocessing and LLM integration.",
-        "img": "src/static/images/img1.webp",
-        "link": "https://github.com/artmiss-gns/rag-project"
-    },
-    {
-        "title": "Stock Market Prediction using LSTM",
-        "text": "Implemented an LSTM-based model for stock price prediction using PyTorch with custom data preprocessing pipeline.",
-        "img": "src/static/images/img2.webp",
-        "link": "https://github.com/artmiss-gns/Stock-Market-Prediction-using-LSTM"
-    },
-    {
-        "title": "Chronic Kidney Disease Prediction Model",
-        "text": "Developed and compared 7 ML models achieving 99% accuracy with XGBoost and Random Forest for kidney disease prediction.",
-        "img": "src/static/images/img3.webp",
-        "link": "https://github.com/artmiss-gns/kidney-disease-prediction"
-    },
-    # Add more project cards as needed
-]
+# # Define your project cards
+# project_cards = [
+#     {
+#         "title": "RAG System with Embedded Knowledge Base",
+#         "text": "Developed a Retrieval-Augmented Generation system using PDF-based knowledge base with heavy preprocessing and LLM integration.",
+#         "img": "src/static/images/img1.webp",
+#         "link": "https://github.com/artmiss-gns/rag-project"
+#     },
+#     {
+#         "title": "Stock Market Prediction using LSTM",
+#         "text": "Implemented an LSTM-based model for stock price prediction using PyTorch with custom data preprocessing pipeline.",
+#         "img": "src/static/images/img2.webp",
+#         "link": "https://github.com/artmiss-gns/Stock-Market-Prediction-using-LSTM"
+#     },
+#     {
+#         "title": "Chronic Kidney Disease Prediction Model",
+#         "text": "Developed and compared 7 ML models achieving 99% accuracy with XGBoost and Random Forest for kidney disease prediction.",
+#         "img": "src/static/images/img3.webp",
+#         "link": "https://github.com/artmiss-gns/kidney-disease-prediction"
+#     },
+#     # Add more project cards as needed
+# ]
 
-# Create the carousel
-c1, c2, c3 = st.columns([1, 4, 1])
-with c2:
-    carousel(items=project_cards, container_height=900, width=70)
-
-st.markdown("---")
+# # Create the carousel
+# c1, c2, c3 = st.columns([1, 4, 1])
+# with c2:
+#     carousel(items=project_cards, container_height=900, width=70)
