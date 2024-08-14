@@ -2,12 +2,19 @@ import streamlit as st
 import PyPDF2
 import base64
 from pathlib import Path
+from streamlit import session_state as ss
 
 primaryColor = "#279095"
 backgroundColor = "#eff3f9"
 secondaryBackgroundColor = "#D1D6DC"
 textColor = "#333333"
 font = "sans serif"
+
+if 'sidebar_state' not in ss:
+    ss.sidebar_state = 'expanded'
+else :
+    if ss.sidebar_state != 'expanded':
+        ss.sidebar_state = 'expanded'
 
 st.markdown(
     f"""
