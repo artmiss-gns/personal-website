@@ -91,7 +91,7 @@ col1, col2 = st.columns([3, 7], gap="large")
 
 with col1:
 
-    show_image('src/static/images/profile_picture.webp')
+    show_image('src/static/images/profile_picture.png')
 
     st.markdown("### Connect with me:")
     st.link_button(":material/mail: Email", "mailto:hossein.gmohammadi@gmail.com", use_container_width=True)
@@ -141,7 +141,7 @@ with col2:
         - 🏆 Ranked in top 10% of Computer Science class
         - 🐍 4+ years of Python expertise with focus on ML frameworks
         - 🧠 Strong foundation in ML theory and hands-on experience in predictive modeling
-        - 👨‍🏫 Teaching Assistant for Algorithms and Data Structures course
+        - 👨‍🏫 Teaching Assistant experience
         - 🚀 Developed multiple ML projects including RAG systems and predictive models
         - 🔧 Experienced in DevOps practices and cloud deployment (AWS, Docker)
         - 🔍 Aspiring AI researcher with a focus on NLP and Information Retrieval

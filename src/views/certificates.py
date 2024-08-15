@@ -12,9 +12,12 @@ font = "sans serif"
 
 if 'sidebar_state' not in ss:
     ss.sidebar_state = 'expanded'
+    # ss.sidebar_state = "collapsed"
 else :
     if ss.sidebar_state != 'expanded':
         ss.sidebar_state = 'expanded'
+    # if ss.sidebar_state != 'collapsed':
+        # ss.sidebar_state = 'collapsed'
 
 st.markdown(
     f"""

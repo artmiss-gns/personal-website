@@ -3,9 +3,12 @@ from streamlit import session_state as ss
 
 if 'sidebar_state' not in ss:
     ss.sidebar_state = 'expanded'
+    # ss.sidebar_state = "collapsed"
 else :
     if ss.sidebar_state != 'expanded':
         ss.sidebar_state = 'expanded'
+    # if ss.sidebar_state != 'collapsed':
+        # ss.sidebar_state = 'collapsed'
 
 def main():
     github_logo = "src/static/logos/github-logo.png"
