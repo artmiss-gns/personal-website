@@ -130,8 +130,8 @@ with col2:
     I'm a fourth-year Computer Science student at the University of Isfahan, specializing in Machine Learning and ranked in the top 10% of my class. My research interests include:
     - **Natural Language Processing**  
     - **Information Retrieval**  
-    - **Adversarial Machine Learning**  
     - **Computer Vision**  
+    - **Machine Learning Security**  
     - **Machine Learning Operations (MLOps)**  
 
     I'm passionate about advancing AI and data science through innovative research and practical applications. My focus extends to DevOps and MLOps practices, aiming to streamline the deployment and management of ML models in production environments.

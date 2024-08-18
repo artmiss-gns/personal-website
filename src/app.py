@@ -104,7 +104,7 @@ pg = st.navigation(
 
 
 st.logo(
-    'src/static/images/logo.png',
+    'src/static/logos/logo.png',
     link='https://github.com/artmiss-gns',
 )
 # st.sidebar.text("Made by Hossein :)")

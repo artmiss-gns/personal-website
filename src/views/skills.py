@@ -87,21 +87,19 @@ skills = {
         "Languages": ["Python", "C++"],
         "Databases": ["MySQL", "PostgreSQL", "SQL Server"]
     },
-    "Machine Learning, Data Science & Collection": {
+    "Machine Learning": {
         "Frameworks": ["Scikit-learn", "TensorFlow", "PyTorch"],
         "Data Processing": ["NumPy", "Pandas"],
         "Data Visualization": ["Matplotlib", "Seaborn"],
-        "Natural Language Processing": ["NLTK", "spaCy"],
+        "Natural Language Processing": ["NLTK", "spaCy", "LlamaIndex"],
         "Web Scraping": ["Selenium", "BeautifulSoup", "Scrapy"]
     },
     "Web Development & DevOps": {
-        "Web Frameworks": ["Django", "FastAPI"],
+        "Web Frameworks": ["Django", "FastAPI", "Streamlit"],
         "Containerization": ["Docker"],
         "Version Control": ["Git"],
-        "Operating Systems": ["Linux"]
-    },
-    "Cloud & DevOps": {
-        "Cloud Platforms": ["AWS"]
+        "Operating Systems": ["Linux"],
+        "Cloud Platforms": ["AWS"],
     }
 }
 
