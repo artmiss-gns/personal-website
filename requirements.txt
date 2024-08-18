@@ -1,0 +1,4 @@
+Pillow==10.4.0
+PyPDF2==3.0.1
+streamlit==1.37.0
+streamlit_carousel==1.1.0
