@@ -62,22 +62,22 @@ st.title("Extracurricular")
 project_cards = [
     {
         "title": "",
-        "img": "src/static/images/PsyCity/PsyCity1.png",
+        "img": "src/static/images/PsyCity/PsyCity1.jpg",
         "text": "",
     },
     {
         "title": "",
-        "img": "src/static/images/PsyCity/PsyCity2.png",
+        "img": "src/static/images/PsyCity/PsyCity2.jpg",
         "text": "",
     },
     {
         "title": "",
-        "img": "src/static/images/PsyCity/PsyCity3.png",
+        "img": "src/static/images/PsyCity/PsyCity3.jpg",
         "text": "",
     },
     {
         "title": "",
-        "img": "src/static/images/PsyCity/PsyCity4.png",
+        "img": "src/static/images/PsyCity/PsyCity4.jpg",
         "text": "",
     },
 ]
