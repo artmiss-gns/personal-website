@@ -144,7 +144,6 @@ with col2:
         - 👨‍🏫 Teaching Assistant experience
         - 🚀 Developed multiple ML projects including RAG systems and predictive models
         - 🔧 Experienced in DevOps practices and cloud deployment (AWS, Docker)
-        - 🔍 Aspiring AI researcher with a focus on NLP and Information Retrieval
     """, unsafe_allow_html=True)
 
 
