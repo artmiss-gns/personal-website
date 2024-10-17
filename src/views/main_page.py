@@ -91,7 +91,7 @@ col1, col2 = st.columns([3, 7], gap="large")
 
 with col1:
 
-    show_image('src/static/images/profile_picture.png')
+    show_image('src/static/images/profile_picture.jpg')
 
     st.markdown("### Connect with me:")
     st.link_button(":material/mail: Email", "mailto:hossein.gmohammadi@gmail.com", use_container_width=True)
