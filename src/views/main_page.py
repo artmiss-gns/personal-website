@@ -127,15 +127,17 @@ with col2:
     # """, unsafe_allow_html=True)
 
     st.markdown("""
-    I'm a fourth-year Computer Science student at the University of Isfahan, specializing in Machine Learning and ranked in the top 10% of my class. My research interests include:
+    I'm a fourth-year Computer Science student at the University of Isfahan, specializing in Machine Learning, and ranked in the top 10% of my class. My research interests include:
+    - **Machine Learning and Deep Learning**
     - **Natural Language Processing**  
     - **Information Retrieval**  
     - **Computer Vision**  
     - **Machine Learning Security**  
     - **Machine Learning Operations (MLOps)**  
-
-    I'm passionate about advancing AI and data science through innovative research and practical applications. My focus extends to DevOps and MLOps practices, aiming to streamline the deployment and management of ML models in production environments.
-    """)
+    """
+    )
+    # I'm passionate about advancing AI and data science through innovative research and practical applications. My focus extends to DevOps and MLOps practices, aiming to streamline the deployment and management of ML models in production environments.
+    
     st.markdown("""
         ### Highlights
         - 🏆 Ranked in top 10% of Computer Science class
