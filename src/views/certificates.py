@@ -3,6 +3,7 @@ import PyPDF2
 import base64
 from pathlib import Path
 from streamlit import session_state as ss
+from PIL import Image
 
 primaryColor = "#279095"
 backgroundColor = "#eff3f9"
@@ -61,13 +62,8 @@ st.markdown(f"""
 
 
 
-def display_pdf(pdf_file):
-    with open(pdf_file, "rb") as f:
-        base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-    pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="100%" height="600" type="application/pdf"></iframe>'
-    return pdf_display
 
-def display_certificate(pdf_path, cert_id, course_name, institution, completion_date):
+def display_certificate(image_path, cert_id, course_name, institution, completion_date):
     col1, col2 = st.columns([3, 4])
     
     with col1:
@@ -81,7 +77,11 @@ def display_certificate(pdf_path, cert_id, course_name, institution, completion_
         st.markdown(f"[Verify Certificate on Coursera]({coursera_url})")
 
     with col2:
-        st.markdown(display_pdf(pdf_path), unsafe_allow_html=True)
+        image = Image.open(image_path)
+        if image:
+            st.image(image, caption=course_name, use_column_width=True)
+        else:
+            st.write("Error displaying PDF as an image.")
 
     st.divider()  # Add a divider between certificates
 
@@ -91,21 +91,21 @@ st.title("My Coursera Certificates")
 certificates = [
     {
         "id": "N4NY92BV4N3K",
-        "path": "src/static/certificates_pdf/Coursera N4NY92BV4N3K.pdf",
+        "path": "src/static/certificates_pdf/N4NY92BV4N3K.jpg",
         "course": "Unsupervised Learning, Recommenders, Reinforcement Learning",
         "institution": "Stanford University",
         "date": "October 12, 2023"
     },
     {
         "id": "RYVXZ4A3VBZW",
-        "path": "src/static/certificates_pdf/Coursera RYVXZ4A3VBZW.pdf",
+        "path": "src/static/certificates_pdf/RYVXZ4A3VBZW.jpg",
         "course": "Supervised Machine Learning: Regression and Classification",
         "institution": "Stanford University",
         "date": "July 31, 2023"
     },
     {
         "id": "Q4SKG3KBKGR7",
-        "path": "src/static/certificates_pdf/Coursera Q4SKG3KBKGR7.pdf",
+        "path": "src/static/certificates_pdf/Q4SKG3KBKGR7.jpg",
         "course": "Advanced Learning Algorithms",
         "institution": "Stanford University",
         "date": "August 27, 2023"
