@@ -85,7 +85,6 @@ h1, h2 {
 </style>
 """, unsafe_allow_html=True)
 
-
 # Hero Section
 col1, col2 = st.columns([3, 7], gap="large")
 
@@ -113,6 +112,12 @@ with col1:
     if st.button(":material/menu: Menu", use_container_width=True, type="primary"):
         open_close_sidebar()
 
+
+    # st.info(
+    #     "🚀 **New Feature Alert!** Check out my latest project on **Machine Learning Predictions**. Scroll down to explore!"
+    # )
+    st.info("🚀 **New RAG API Project Launched** ([website](https://rag-ui.streamlit.app))")
+    st.info("🎉 **IELTS Score Update!**\n\nProud to share I scored 8 overall! \n(R:9, L:8.5, S:7, W:7)")
 
 with col2:
     st.title("Hossein Golmohammadi")
