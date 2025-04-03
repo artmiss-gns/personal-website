@@ -83,8 +83,6 @@ st.markdown("""
     </ul>
     <h4>Selected Coursework:</h4>
     <ul>
-        <li><b>Special Topics in Computer Science (Machine Learning/Deep Learning)</b>: <span style="color: #3e8e41;">A+ (19/20)</span></li>
-        <li><b>Artificial Intelligence</b>: <span style="color: #3e8e41;">A+ (18.5/20)</span></li>
         <li><b>Data Structures and Algorithms</b>: <span style="color: #3e8e41;">A (17.8/20)</span></li>
         <li><b>Nonlinear Optimization</b>: <span style="color: #3e8e41;">A (17.8/20)</span></li>
         <li><b>Linear Optimization</b>: <span style="color: #3e8e41;">A (17/20)</span></li>
