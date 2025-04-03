@@ -48,12 +48,6 @@ certificates = st.Page(
     url_path='/certificates',
 )
 
-skills = st.Page(
-    page='views/skills.py',
-    title='Skills',
-    icon=':material/construction:',
-    url_path='/skills',
-)
 
 education = st.Page(
     page='views/education.py',
@@ -67,7 +61,7 @@ nav = st.navigation(pages=[main_page, ])
 pg = st.navigation(
     {
         "": [main_page],
-        "About": [education, skills, certificates],
+        "About": [education, certificates],
 
         "Projects": [projects],
         "Other": [extracurricular],
