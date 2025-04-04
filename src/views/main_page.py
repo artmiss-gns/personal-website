@@ -109,14 +109,19 @@ with col1:
 
 with col2:
     st.title("Hossein Golmohammadi")
-    st.subheader("Computer Science Student")
-
     st.markdown("""
-    I'm a fourth-year Computer Science student at the University of Isfahan. My research interests include:
-    - **Natural Language Processing**
-    - **Natural Language Processing for Low-Recourced Languages**
-    - **Information Retrieval**
-    - **Sentiment Analysis and Opinion Mining**
-    - **Computational Linguistics for Multilingual Systems**
-    """
-    )
+    <div style="background-color: #f0f8ff; padding: 20px; border-radius: 10px; border-left: 5px solid #1F7A7A;">
+        <h2 style="color: #1F7A7A; margin-bottom: 15px;">About Me</h2>
+        <p style="font-size: 18px; line-height: 1.6;">
+            🎓 Computer Science student with a passion for <span style="color: #1F7A7A; font-weight: bold;">Natural Language Processing (NLP)</span>
+        </p>
+        <p style="font-size: 18px; line-height: 1.6;">
+            🔬 Focusing on computational linguistics for diverse languages
+        </p>
+        <p style="font-size: 18px; line-height: 1.6;">
+            🚀 My research focuses on developing innovative approaches to enhance language processing technologies for diverse languages
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    
