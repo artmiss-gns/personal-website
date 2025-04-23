@@ -41,27 +41,27 @@ extracurricular = st.Page(
     url_path='/extracurricular',
 )
 
-certificates = st.Page(
-    page='views/certificates.py',
-    title='Certificates',
-    icon=':material/book:',
-    url_path='/certificates',
-)
+# certificates = st.Page(
+#     page='views/certificates.py',
+#     title='Certificates',
+#     icon=':material/book:',
+#     url_path='/certificates',
+# )
 
 
-education = st.Page(
-    page='views/education.py',
-    title='Education',
-    icon=':material/school:',
-    url_path='/education',
-)
+# education = st.Page(
+#     page='views/education.py',
+#     title='Education',
+#     icon=':material/school:',
+#     url_path='/education',
+# )
 
 # Navigation bar
 nav = st.navigation(pages=[main_page, ])
 pg = st.navigation(
     {
         "": [main_page],
-        "About": [education, certificates],
+        # "About": [education, certificates],
 
         "Projects": [projects],
         "Other": [extracurricular],
