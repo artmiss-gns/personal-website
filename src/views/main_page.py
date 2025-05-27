@@ -115,12 +115,6 @@ with col2:
         <p style="font-size: 18px; line-height: 1.6;">
             🎓 Computer Science student with a passion for <span style="color: #1F7A7A; font-weight: bold;">Natural Language Processing (NLP)</span>
         </p>
-        <p style="font-size: 18px; line-height: 1.6;">
-            🔬 Focusing on computational linguistics for diverse languages
-        </p>
-        <p style="font-size: 18px; line-height: 1.6;">
-            🚀 My research focuses on developing innovative approaches to enhance language processing technologies for diverse languages
-        </p>
     </div>
     """, unsafe_allow_html=True)
 
