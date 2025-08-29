@@ -34,12 +34,12 @@ projects = st.Page(
     url_path='/projects',
 )
 
-# extracurricular = st.Page(
-#     page='views/extracurricular.py',
-#     title='Extracurricular',
-#     icon=':material/book:',
-#     url_path='/extracurricular',
-# )
+extracurricular = st.Page(
+    page='views/extracurricular.py',
+    title='Extracurricular',
+    icon=':material/book:',
+    url_path='/extracurricular',
+)
 
 # certificates = st.Page(
 #     page='views/certificates.py',
@@ -64,7 +64,7 @@ pg = st.navigation(
         # "About": [education, certificates],
 
         "Projects": [projects],
-        # "Other": [extracurricular],
+        "Other": [extracurricular],
     }
 )
 

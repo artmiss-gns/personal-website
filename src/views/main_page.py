@@ -2,7 +2,6 @@ import streamlit as st
 from io import BytesIO
 import base64
 from PIL import Image
-from streamlit_carousel import carousel
 from streamlit import session_state as ss
 
 if 'sidebar_state' not in ss:
@@ -105,7 +104,6 @@ with col1:
     #     "🚀 **New Feature Alert!** Check out my latest project on **Machine Learning Predictions**. Scroll down to explore!"
     # )
     # st.info("🚀 **New RAG API Project Launched** ([website](https://rag-ui.streamlit.app))")
-    st.info("🎉 **IELTS Score Update!**\n\nProud to share I scored 8 overall! \n(R:9, L:8.5, S:7, W:7)")
 
 with col2:
     st.title("Hossein Golmohammadi")
